@@ -1,0 +1,327 @@
+:root {
+    --main-bg-color: #f5f4eb;
+    --main-sub-color: #ad9490;
+    --main-head-color: #1d555d;
+    --main-nav-color: #c54444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: #191905;
+}
+
+/*header detail*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    padding: 0 24px;
+    border-right: solid 1px var(--main-sub-color);
+    /* overflow-y: hidden; */
+}
+
+header h1 {
+    width: 100%;
+    height: 24px;
+    padding: 48px 0 4px 0;
+    overflow: hidden;
+}
+
+header h1 a {
+    display: block;
+    color: var(--main-head-color);
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header h2 {
+    font-size: 15px;
+    padding: 0 0 48px 0;
+}
+
+header .main {
+    border-bottom: 0.5px solid var(--main-sub-color);
+}
+
+header .main nav ul li {
+    padding: 0 0 30px 0;
+}
+
+header .main nav ul li a {
+    color: var(--main-head-color);
+}
+header .main hr {
+    margin: 6px 0;
+}
+
+header .link {
+    padding: 0 0 30px 0;
+}
+
+header .link nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 12px 0;
+}
+
+header .link nav ul li a i {
+    font-size: 27px;
+    color: var(--main-head-color);
+}
+
+header .link p a {
+    color: var(--main-head-color);
+    text-decoration: underline;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+/*main detail*/
+
+main {
+    margin: 0 0 0 248px;
+}
+
+main .mainimg {
+    width: 100%;
+    margin: -25% 0 0 0;
+}
+
+main article {
+    margin: 0 auto;
+    padding: 24px 80px 20px 80px;
+}
+
+main article h3 {
+    color: var(--main-head-color);
+    font-weight: 500;
+    font-size: 54px;
+    padding: 12px 0;
+}
+
+main article p {
+    text-align: justify;
+}
+
+main #about {
+    position: relative;
+    max-width: 900px;
+}
+
+main #about .stack {
+    width: 500px;
+    background-clip: content-box;
+    background-color: white;
+    position: relative;
+    float: left;
+}
+
+main #about .stack .hcj {
+    width: 57%;
+    padding: 5% 0 2% 4.5%;
+}
+
+main #about .stack .nodejs {
+    width: 27%;
+    padding: 2% 8% 1.5% 2.5%;
+}
+
+main #about .stack .python {
+    width: 40%;
+    padding: 0 3% 3% 8%;
+}
+
+main #about .stack .mongodb {
+    width: 40%;
+    padding: 0 6.5% 3.5% 1.5%;
+}
+
+main #about .stacktext {
+    height: 100%;
+    text-align: right;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+main #about .stacktext h4,
+main #about .stacktext .hand {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 20px 0 26px 0;
+}
+
+main #about .stacktext .hand {
+    display: block;
+    float: right;
+    width: 36px;
+    margin: 0 2px 0 0;
+}
+
+main #about .stacktext .intro {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    clear: both;
+}
+
+main #about .stacktext .career {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 26px;
+}
+
+main #campus {
+    max-width: 100%;
+    padding: 24px 0 0 0;
+}
+
+main #campus .campustext {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 80px 20px 80px;
+}
+
+main #campus .campustext h4 {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+main #campus .container {
+    display: grid;
+    grid-auto-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 16px 16px;
+    max-width: 100%;
+    background-color: #e2ded4;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main #campus .container img {
+    border: solid 1px var(--main-sub-color);
+    padding: 4px;
+}
+
+main #campus .container div {
+    position: relative;
+}
+
+main #campus .container .vlab {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+main #campus .container .vlab img {
+    height: 319px;
+}
+
+main #campus .container .dlab {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+main #campus .container .dlab img {
+    height: 478px;
+}
+
+main #campus .container .daehakro {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+main #campus .container .daehakro img {
+    height: 130px;
+}
+
+main #campus .container .cosmetic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+main #campus .container .cosmetic img {
+    height: 130px;
+}
+
+main #campus .container .vlab .text,
+main #campus .container .dlab .text,
+main #campus .container .daehakro .text,
+main #campus .container .cosmetic .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #755b57;
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+main #campus .container .vlab .text:hover,
+main #campus .container .dlab .text:hover,
+main #campus .container .daehakro .text:hover,
+main #campus .container .cosmetic .text:hover {
+    opacity: 0.8;
+}
+
+main #portfolio {
+    max-width: 900px;
+}
+
+main #contact {
+    max-width: 900px;
+}
+
+/* footer detail */
+
+footer {
+    color: var(--main-head-color);
+    padding: 20px 20px 0;
+    margin: 0 0 0 272px;
+    text-align: right;
+    border-top: solid 1px var(--main-sub-color);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 1301px) {
+    main #about .stack {
+        float: none;
+    }
+
+    main #about .stacktext {
+        margin-top: -76px;
+    }
+}
